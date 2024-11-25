@@ -3,5 +3,7 @@
 <ul>
     {% for categoria in categorias %}
     <li>{{ categoria.nombre }}</li>
+    {% empty %}
+        <li>No se encontraron categorías</li>
     {% endfor %}
 </ul>
